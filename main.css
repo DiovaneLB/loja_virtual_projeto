@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(99, 13, 10);
+    padding-top: 16px;
+    color: #fff;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #cf5757;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 800px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-instrumentos {
+    flex-wrap: wrap;
+}
+
+.lista-instrumentos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-instrumentos li img {
+    max-width: 100%;
+}
+
+.lista-instrumentos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-instrumentos li button {
+    display: block; 
+    width: 100%;
+    padding: 8px 0 ;
+    border: none;
+    background-color: rgb(70, 160, 70);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+li {
+    width: 100%;
+    list-style-type: none ;
+}
+
+li img {
+    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+    header > .container {
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .lista-instrumentos li {
+        list-style: none;
+        max-width: 45%;
+        margin-bottom: 24px;
+    }
+    #sobre-a-loja .container-flex {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #sobre-a-loja img {
+        max-width: 800px;
+        margin-right: 24px;
+    }
+    .lista-instrumentos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    .container-flex {
+        display: block;
+    }
+    .menu-hamburguer {
+        display: none;
+        width: 32px;
+    }
+    nav {
+        background-color: #cf5757;
+        padding: 16px 0;
+        display: flex;
+    }
+}
